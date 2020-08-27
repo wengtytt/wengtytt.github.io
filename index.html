@@ -1,0 +1,49 @@
+
+			<html lang='en'>
+				<noscript>
+					<meta http-equiv='refresh' content='0; url=en/home.html' />
+				</noscript>
+				<body>
+					<script type='text/javascript'>
+						var availableLangs = ['en', 'fr'];
+						var homePages = {"en":"home","fr":"home"};
+						var userLang = navigator.language || navigator.userLanguage;
+						var tgtLang;
+
+						for (var i = 0; i < availableLangs.length && !tgtLang; i++) {
+							if (userLang == availableLangs[i])
+								tgtLang = userLang;
+						}
+
+						if (!tgtLang) {
+							var preLang = userLang.split('-')[0];
+							
+							for (var i = 0; i < availableLangs.length && !tgtLang; i++) {
+								if (preLang == availableLangs[i].split('-')[0])
+									tgtLang = availableLangs[i];
+							}
+
+							if (!tgtLang)
+								tgtLang = 'en';
+						}
+
+						var tgtUrl = tgtLang + '/' + homePages[tgtLang] + '.html';
+						var query = window.location.search || '';
+
+						
+            var ref = document.referrer || '';
+
+            if (ref) {
+                if (ref.endsWith('/'))
+                    ref = ref.slice(0, -1);
+                
+                query += (query ? '&' : '?') + '_ref=' + encodeURIComponent(
+                    ref.split('://')[1] || ref); 
+            }
+
+						tgtUrl += query + (window.location.hash || '');
+
+						window.location.replace(tgtUrl);
+					</script>
+				</body>
+			</html>

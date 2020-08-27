@@ -1,0 +1,53 @@
+{
+    "Button": {
+        "path": "_global\/Button"
+    },
+    "Container": {
+        "path": "_global\/Container"
+    },
+    "Divider": {
+        "path": "_global\/Divider"
+    },
+    "Footer": {
+        "path": "_global\/Footer"
+    },
+    "Link": {
+        "path": "_global\/Link"
+    },
+    "Navigation": {
+        "path": "_global\/Navigation"
+    },
+    "NavigationItem": {
+        "path": "_global\/NavigationItem"
+    },
+    "Page": {
+        "path": "_global\/Page"
+    },
+    "Section": {
+        "path": "_global\/Section"
+    },
+    "Text": {
+        "path": "_global\/Text"
+    },
+    "Title": {
+        "path": "_global\/Title"
+    },
+    "Widget": {
+        "path": "_global\/Widget"
+    },
+    "BlogPost": {
+        "path": "_global\/BlogPost"
+    },
+    "Image": {
+        "path": "_global\/Image"
+    },
+    "HTML5Video": {
+        "path": "_global\/HTML5Video"
+    },
+    "Blog": {
+        "path": "_global\/Blog"
+    },
+    "tianyu__FlexSearch": {
+        "path": "tianyu\/FlexSearch"
+    }
+}

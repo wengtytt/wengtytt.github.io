@@ -1,0 +1,1 @@
+.Title{font-family:inherit;font-weight:500;line-height:1.2;color:inherit}.Title p{text-decoration:underline}.Title .test{color:#00f}.Title.red{color:red}@media screen and (min-width:1200px){.Title.red{text-overflow:ellipsis;white-space:nowrap;display:flex;align-content:center}}@media screen and (min-width:992px){.Title{font-size:17px}}
