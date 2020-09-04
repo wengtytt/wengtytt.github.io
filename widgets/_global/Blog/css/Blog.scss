@@ -1,0 +1,91 @@
+.Blog {
+    width: 100%;
+    .blogs-container {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        .cards-filters {
+            padding: 0 22px;
+            display: flex;
+            .tabs-container {
+                display: flex;
+                align-items: center;
+                margin-left: 12px;
+                .tab-item {
+                    padding: 2px 12px;
+                    border: 1px solid #999;
+                    color: #999;
+                    border-radius: 20px;
+                    font-size: 10px;
+                    margin-right: 8px;
+                    cursor: pointer;
+                    &.active {
+                        background-color: antiquewhite;
+                    }
+                }
+            }
+            .input-container {
+                display: inline-flex;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                position: relative;
+                padding: 4px 12px;
+                .search-box {
+                    border: none;
+                    padding-right: 26px;
+                    outline: none;
+                }
+                .search-btn {
+                    color: #ccc;
+                    position: absolute;
+                    right: 10px;
+                    top: 6px;
+                    display: flex;
+                    svg {
+                        fill: #bbb;
+                        height: 22px;
+                        width: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .cards-innerHolder {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        .card-item {
+            min-height: 500px;
+            padding: 20px;
+            width: 323px;
+            box-sizing: border-box;
+        }
+        a {
+            display: flex;
+            flex-flow: column;
+            text-decoration: none;
+            color: black;
+            img {
+                width: 100%;
+                height: 420px;
+                object-fit: cover;
+                margin-bottom: 8px;
+            }
+            .blog-meta {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #d08d43;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 500;
+            }
+            .blog-title {
+                font-weight: 500;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
